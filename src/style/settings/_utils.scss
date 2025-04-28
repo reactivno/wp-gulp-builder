@@ -1,0 +1,36 @@
+.visually-hidden:not(:focus):not(:active),
+input[type='radio'].visually-hidden,
+input[type='checkbox'].visually-hidden,
+input[type='file'].visually-hidden {
+  @include visually-hidden;
+}
+
+#site-top {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.indent-reset {
+  @include indent-reset;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.shaked {
+  @include anim(shake, 0.6s);
+}
+
+.is-lock-scroll {
+  overflow: hidden;
+
+  @include media-min ($xl) {
+    overflow: visible;
+  }
+}

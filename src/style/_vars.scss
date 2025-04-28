@@ -1,0 +1,23 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #BD0300;
+  --error: var(--red);
+
+  // other vars
+  --min-site-width: 375px;
+  --max-site-width: 1920px;
+  --max-container-width: 1590px;
+
+  // transitions
+  --duration-default: 0.3s;
+  --duration-fast: 0.15s;
+  --duration-slow: 0.6s;
+}
+
+$sm: 540px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1440px;
+$xxl: 1920px;
+$main-font: "Open Sans";

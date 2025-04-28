@@ -1,0 +1,31 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "color-hex-alpha": "never",
+    "color-hex-length": "long",
+    "color-named": "never",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "selector-not-notation": "simple",
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": "font-feature-settings"
+      }
+    ],
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": [ "/flex/" ]
+      }
+    ],
+    "value-keyword-case": [ "lower", {
+      "ignoreKeywords": [ "currentColor" ]
+    } ],
+    "rule-empty-line-before": [ "always", {
+      "ignore": [ "first-nested" ]
+    } ]
+  }
+}

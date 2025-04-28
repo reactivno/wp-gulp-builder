@@ -1,0 +1,19 @@
+.site {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100 * var(--vh, 1vh));
+  }
+
+  &__header {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__footer {
+    flex-shrink: 0;
+  }
+}

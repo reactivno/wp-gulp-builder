@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "es2020": true,
+    "browser": true
+  },
+  "globals": {
+    "AcceptCookiePopup": "readonly",
+    "baguetteBox": "readonly",
+    "HystModal": "readonly",
+    "JustPhoneMask": "readonly",
+    "JustValidate": "readonly",
+    "SmoothScroll": "readonly",
+    "Swiper": "readonly"
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-alert": "error",
+    "no-console": [ "error", {
+      "allow": [ "warn", "error" ]
+    } ],
+    "quotes": [ "error", "single" ],
+    "semi": "error",
+    "semi-style": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
+    "no-trailing-spaces": "error"
+  }
+}
