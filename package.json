@@ -1,6 +1,6 @@
 {
   "name": "wp-gulp-builder",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Сборщик файлов для разработки WP-темы",
   "private": true,
   "type": "module",
