@@ -117,13 +117,17 @@ const delVendorJS = () => deleteAsync( '../assets/vendor.js', {
 } );
 
 const concatJS = () => {
-  return src( [ '../assets/vendor.js', '../assets/main.js' ] )
+  return src( [ '../assets/vendor.js', '../assets/main.js' ], {
+      allowEmpty: true
+    } )
     .pipe( concat( 'main.js' ) )
     .pipe( dest( '../assets/' ) );
 };
 
 const processVendorJS = () => {
-  return src( './src/vendor/**/*.js' )
+  return src( './src/vendor/**/*.js', {
+      allowEmpty: true
+    } )
     .pipe( concat( 'vendor.js' ) )
     .pipe( dest( '../assets/' ) );
 };
